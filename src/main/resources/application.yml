@@ -1,0 +1,30 @@
+# INFO
+info:
+  app:
+    name: @project.name@
+    description: @project.description@
+    version: @project.version@
+    encoding: @project.build.sourceEncoding@
+    java:
+      version: @java.version@
+
+# SERVER
+server:
+  port: 8080
+
+# SPRING
+spring:
+  application:
+    name: @project.name@
+
+# MANAGEMENT
+management:
+  endpoint:
+    health:
+      show-details: never
+    metrics:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: health
